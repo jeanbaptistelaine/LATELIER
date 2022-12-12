@@ -16,12 +16,9 @@ export default function PlayerDetails({ playerID }) {
       <span className='dark-filter'>
         <CloseButton />
         <div className='card--full-width'>
-          <img
-            className='img--absolute'
-            src={picture}
-            alt={`${firstname} ${lastname}`}
-          ></img>
-
+          <div className='img-player'>
+            <img src={picture} alt={`${firstname} ${lastname}`}></img>
+          </div>
           <div className='container-stats-details'>
             <div className='title-flag--flex'>
               <div className='title-big--container'>

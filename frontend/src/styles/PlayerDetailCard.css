@@ -29,9 +29,14 @@
   flex-wrap: wrap;
 }
 
-img.img--absolute {
+.img-player img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 10px 5px 5px var(--clr-black30);
   filter: drop-shadow(16px 16px 10px grey);
-  max-width: 150px;
+  margin-bottom: 2rem;
 }
 
 .title-stroke-big {
@@ -43,7 +48,10 @@ img.img--absolute {
   color: white;
 }
 .title-x-big {
-  font-size: 5rem;
+  font-size: 15vw;
+}
+.title-stroke-big {
+  font-size: 10vw;
 }
 
 .container-stats-details {
@@ -96,10 +104,14 @@ img.img--absolute {
     font-size: 6rem;
   }
 
-  img.img--absolute {
+  .img-player img {
     position: absolute;
     left: 0;
     bottom: 0;
     max-width: 400px;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    margin-bottom: 0;
   }
 }

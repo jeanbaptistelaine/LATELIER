@@ -3,7 +3,7 @@ import Stats from '../components/cards/StatsCard'
 
 export default function Home() {
   return (
-    <main>
+    <main className='main-flex'>
       <section className='container'>
         <ListPlayers />
       </section>

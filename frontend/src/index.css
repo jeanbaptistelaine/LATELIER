@@ -87,12 +87,15 @@ strong {
 
 main {
   min-height: 100vh;
+  background-image: url('./assets/home-background.jpg');
+  background-size: cover;
+}
+
+main.main-flex {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url('./assets/home-background.jpg');
-  background-size: cover;
 }
 
 @media screen and (min-width: 800px) {

@@ -1,10 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react'
-import App from './App'
-
-test('renders without crashing', () => {
-  render(<App />)
-})
-
+import App from '../../App'
 test('check if players list is loaded', async () => {
   render(<App />)
   const playersList = await waitFor(() => screen.findByTestId('player-list'))
