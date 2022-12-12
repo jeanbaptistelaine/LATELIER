@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd frontend && npm install",
     "test": "concurrently 'nodemon backend/index.js' 'cd frontend && npm test'",
     "dev": "concurrently 'nodemon backend/index.js' 'cd frontend && npm start'",
     "start": "node backend/index.js",
